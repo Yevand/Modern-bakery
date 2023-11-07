@@ -1,4 +1,5 @@
 /* Fonts */
+
 @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -32,6 +33,7 @@
   }
 
 /* Colors */
+
 :root {
     --color-brand-dark: #465929;
     --color-brand-light: #819B57;
@@ -41,16 +43,22 @@
 }
 
 /* Base */
+
 html {
     background-color: grey; /*tempo*/
 }
 
 body {
+    margin: 0;
     color: var(--color-primary-dark);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+    margin-top: 0;
 }
 
 address {
@@ -61,8 +69,30 @@ ul {
     list-style-type: none;
 }
 
+.section {
+    padding: 48px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* Button */
+
 .button {
+    padding: 16px 32px;
     color: var(--color-primary-light);
     font-weight: 600;
     line-height: 1.5;
@@ -79,6 +109,7 @@ ul {
 }
 
 /* Link */
+
 .link {
     color: var(--color-primary-light);
     text-decoration: none;
@@ -91,7 +122,9 @@ ul {
 }
 
 /* Hero section */
+
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primary-light);
     text-align: center;
     font-weight: 900;
@@ -102,7 +135,12 @@ ul {
     color: var(--color-brand-light);
 }
 
+.hero-section {
+   padding: 272px 0; 
+}
+
 /*  Advantage section */
+
 .advantages-list {
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
@@ -114,6 +152,7 @@ font-weight: 300;
 }
 
 /* Section title */
+
 .section-title {
     color: var(--color-primary-dark);
     font-weight: 900;
@@ -140,23 +179,54 @@ font-weight: 300;
     font-size: 14px;
 }
 
+.formats-title {
+    margin-bottom: 80px;
+}
+
 /* Paragraph section */
+
 .accent {
     color: var(--color-brand-dark);
 }
 
 /* Tradition section */
+
 .uppercase-accent {
     color: var(--color-brand-dark);
     text-transform: uppercase;
 }
 
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
 /* Navigation section */
 
 /* Chefs section */
+
 .chef-title {
+    margin-bottom: 16px;
     font-weight: 600;
     font-size: 40px;
+}
+
+.chefs-title {
+    margin-bottom: 80px;
+}
+
+/* Contact section */
+
+.contact-title {
+    margin-bottom: 16px;
+}
+
+.maps {
+    width: 100%;
+    max-width: 603px;
 }
 
 /* Footer */
