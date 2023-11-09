@@ -11,20 +11,28 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="logo of modern bakery" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Our traditions</a>
-            </li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#chefs-section">Our chefs</a></li>
-            <li><a class="link" href="#contacts-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Request the call</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="logo of modern bakery" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li>
+                <a class="link" href="#formats-section">Formats</a>
+              </li>
+              <li>
+                <a class="link" href="#chefs-section">Our chefs</a>
+              </li>
+              <li>
+                <a class="link" href="#contacts-section">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Request the call</button>
+        </div>
       </div>
     </header>
     <main>
@@ -33,7 +41,7 @@
           <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -45,20 +53,24 @@
       </section>
       <section class="traditions-section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">
-            New format of traditions
-          </h2>
-          <p>
-            <span class="uppercase-accent">chop bakery</span> - is accumulation
-            of best tradition practice in new style with the best taste as
-            result
-          </p>
-          <p>
-            We work in style of
-            <span class="accent">5 minute readiness of order</span>. Off course,
-            with high quality!
-          </p>
-          <img src="./images/baker.jpg" alt="Baker works with smile" />
+          <div class="traditions-container">
+            <div class="tradition-content">
+              <h2 class="traditions-title section-title">
+                New format of traditions
+              </h2>
+              <p class="tradition-text">
+                <span class="uppercase-accent">chop bakery</span> - is
+                accumulation of best tradition practice in new style with the
+                best taste as result
+              </p>
+              <p class="tradition-text limited">
+                We work as a well-known chain -
+                <span class="accent">5 minute readiness of order</span>.
+                <br />With stylish design and off course, with high quality!
+              </p>
+            </div>
+            <img src="./images/baker.jpg" alt="Baker works with smile" />
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
@@ -92,9 +104,9 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title">Formats</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Area: up to 120 m2</p>
@@ -107,8 +119,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Area: up to 25 m2</p>
@@ -118,8 +130,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Area: up to 15 m2</p>
